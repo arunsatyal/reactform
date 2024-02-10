@@ -1,7 +1,6 @@
 import { Card, Form, Col } from "react-bootstrap";
 import React, { useState } from "react";
 import DisplayText from "./displayText.jsx";
-import DisplayHookText from "./displayHookText.jsx";
 
 const ReactForm = (props, propsHook) => {
   const [inputValue, setInputValue] = useState("");

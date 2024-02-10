@@ -1,8 +1,71 @@
-# React + Vite
+# Dynamic Form Handler with Custom React Hook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I've created a form that collects inputs from various fields and updates the page with the entered data. To make things more efficient, especially in larger projects, I've also designed a custom hook. This hook simplifies the process of managing changes to the form's inputs, ensuring I don't have to repeat similar code elsewhere.
 
-Currently, two official plugins are available:
+## Framework
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application used React Bootstrap framework for better UI.
+
+## Installation
+
+Open VS Code terminal and run following command:
+
+```bash
+yarn create vite
+```
+
+- Project Name: reactform
+- Select: React
+- Select: Javascript
+
+Go to project main fodler
+
+```bash
+cd reactform
+```
+
+Install React Bootstrap
+
+```bash
+yarn add react-bootstrap bootstrap
+```
+
+Run application
+
+```bash
+yarn dev
+```
+
+## Cleaning up
+
+Open following files and remove all the code inside:
+
+- Index.css
+- App.css
+
+then also remove the imports from App.jsx and replace the code of return value with:
+
+```Javascript
+return (
+  <>
+
+  </>
+)
+```
+
+## Usage
+
+Create new folder called 'components' inside 'src' folder and create a file `form.jsx`
+
+### `components/form.jsx`
+
+### Imports
+
+- Importing React Bootstrap components `Card, Form, Col` to design UI.
+
+- Importing `useState` to save and update initial input data onChange.
+
+```Javascript
+import { Card, Form, Col } from "react-bootstrap";
+import React, { useState } from "react";
+```
