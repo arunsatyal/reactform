@@ -1,11 +1,21 @@
 import { Card, Form, Col } from "react-bootstrap";
 
-const DisplayText = () => {
+const DisplayText = (props) => {
   return (
-    <Col>
-      <Card style={{ width: "25rem" }} className="p-3">
+    <Col sm={6}>
+      <Card style={{ minHeight: "20rem" }} className="p-3">
         <Card.Body>
-          <h5 className="fw-light fs-2 text-success">Hello</h5>
+          <Card.Title className="text-center mb-5">
+            <p>
+              This is Data Display Component.
+              <br /> Data is passing through props.
+            </p>
+          </Card.Title>
+          <h5 className="text-center fw-light fs-2 text-success">
+            {props.myname}
+            <span> ❤️ </span>
+            {props.myfav}
+          </h5>
         </Card.Body>
       </Card>
     </Col>
