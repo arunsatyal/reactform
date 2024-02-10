@@ -8,7 +8,7 @@ This application used React Bootstrap framework for better UI.
 
 ## Demo
 
-[See Demo on Vercel]("https://reactform-theta.vercel.app/")
+[See Demo on Vercel](https://reactform-theta.vercel.app/)
 
 ## Installation
 
